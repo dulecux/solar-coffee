@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <ItemGroup>
+    <ProjectReference Include="..\SolarCoffee.Data\SolarCoffee.Data.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11"/>
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
