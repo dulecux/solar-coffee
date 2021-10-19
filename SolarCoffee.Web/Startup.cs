@@ -13,6 +13,9 @@ using Microsoft.Extensions.Logging;
 using SolarCoffee.Data;
 using Microsoft.EntityFrameworkCore;
 using SolarCoffee.Services.Product;
+using SolarCoffee.Services.Customer;
+using SolarCoffee.Services.Order;
+using SolarCoffee.Services.Inventory;
 
 namespace SolarCoffee.Web
 {
@@ -36,6 +39,10 @@ namespace SolarCoffee.Web
             });
 
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<ICustomerService, CustomerService>();
+            services.AddTransient<IOrderService, OrderService>();
+            services.AddTransient<IInventoryService, InventoryService>();
+            
             
         }
 
